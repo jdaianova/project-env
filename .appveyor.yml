@@ -23,11 +23,16 @@ deploy:
   - provider: GitHub
     auth_token:
       secure: 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
-
-deploy_script:  # скрипт развёртывания
-  - git config --global credential.helper store
+#    artifact: /.*\.nupkg/            # upload all NuGet packages to release assets
+    draft: false
+    prerelease: false
+    on:
+      branch: gh-pages                 # release from master branch only
+      appveyor_repo_tag: true        # deploy on tag push only
+#deploy_script:  # скрипт развёртывания
+#  - git config --global credential.helper store
 #  - git config --global user.name jdaianova
 #  - git config --global user.email jdaianova@gmail.com
 #  - echo "https://$GITHUB_TOKEN:x-oauth-basic@github.com" > "$HOME/.git-credentials"
-  - npx push-dir --dir=dist --branch=gh-pages --force --verbose
+#  - npx push-dir --dir=dist --branch=gh-pages --force --verbose
 
