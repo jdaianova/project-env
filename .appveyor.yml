@@ -22,7 +22,7 @@ test_script:
 deploy:
   - provider: GitHub
     auth_token:
-      secure: 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
+      secure: $GITHUB_TOKEN
 #    artifact: /.*\.nupkg/            # upload all NuGet packages to release assets
     draft: false
     prerelease: false
