@@ -23,7 +23,6 @@ deploy:
   - provider: GitHub
     auth_token:
       secure: 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
-  artifact: deploy
 
 deploy_script:  # скрипт развёртывания
   - git config --global credential.helper store
