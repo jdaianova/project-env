@@ -4,7 +4,7 @@ stack: node 16  # окружение
 
 branches:
   only:
-    - master  # ветка git
+    - main  # ветка git
 
 cache: node_modules  # кеширование
 
@@ -27,7 +27,7 @@ deploy:
     draft: false
     prerelease: false
     on:
-      branch: gh-pages                 # release from master branch only
+      branch: main                 # release from master branch only
       appveyor_repo_tag: true        # deploy on tag push only
 #deploy_script:  # скрипт развёртывания
 #  - git config --global credential.helper store
