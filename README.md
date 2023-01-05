@@ -1,6 +1,4 @@
-![CI](https://github.com/<jdaianova>/<project-env>/actions/workflows/web.yml/badge.svg)
+[![Build status](https://ci.appveyor.com/api/projects/status/syb1k9x3p8ra0rg4?svg=true)](https://ci.appveyor.com/project/jdaianova/project-env)
 
-# Webpack5
+https://jdaianova.github.io/project-env/
 
-[Руководство по настройке Webpack](https://webpack.js.org/guides/)
-[Руководство по настройке GitHub Actions](https://docs.github.com/en/actions/quickstart)

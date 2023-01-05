@@ -19,20 +19,6 @@ build_script:
 test_script:
   - npm run lint && npm test  # скрипт тестирования
 
-# working options below
-#deploy:
-#  - provider: GitHub
-#    tag: $(APPVEYOR_REPO_TAG_NAME)
-#    auth_token:
-#      secure: $GITHUB_TOKEN
-#    artifact: /.*\.nupkg/            # upload all NuGet packages to release assets
-#    draft: false
-#    prerelease: false
-#    force_update: true
-#    on:
-#      branch: main                 # release from master branch only
-#      APPVEYOR_REPO_TAG: true        # deploy on tag push only
-
 deploy_script:  # скрипт развёртывания
   - git config --global credential.helper store
   - git config --global user.name jdaianova
